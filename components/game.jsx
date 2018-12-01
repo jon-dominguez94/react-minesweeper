@@ -1,5 +1,5 @@
 import React from 'react';
-import * as Minesweeper from '../minesweeper.js';
+import * as Minesweeper from '../minesweeper';
 
 class Game extends React.Component{
 
