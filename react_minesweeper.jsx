@@ -1,0 +1,14 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import * as Minesweeper from '../minesweeper.js'
+
+const Root = () => (
+  <div>
+    React is working
+  </div>
+);
+
+document.addEventListener('DOMContentLoaded', () => {
+  const root = document.getElementById('root');
+  ReactDOM.render(<Root />, root);
+});
