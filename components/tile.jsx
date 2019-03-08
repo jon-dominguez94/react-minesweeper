@@ -12,8 +12,10 @@ class Tile extends React.Component {
       return <span>&#128681;</span>;
     } else if(this.props.tile.bombed){
       return <span>&#128163;</span>;
+    } else if(this.props.tile.explored){
+      return this.props.tile.adjacentBombCount();
     } else {
-      return 'T';
+      return " ";
     }
   }
 
