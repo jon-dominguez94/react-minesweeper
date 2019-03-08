@@ -1,11 +1,25 @@
 import React from 'react';
 
 class Tile extends React.Component {
+  constructor(props){
+    super(props);
 
-  render() {
+    this.getSymbol = this.getSymbol.bind(this);
+  }
+
+  getSymbol(){
     return (
       <span>
-        T
+        &#128681;
+      </span>
+    );
+  }
+
+  render() {
+    console.log(this.props.tile);
+    return (
+      <span>
+        {this.getSymbol()}
       </span>
     );
   }
