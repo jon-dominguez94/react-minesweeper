@@ -1,11 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Game from './components/game';
 
 
 const Root = () => (
-  <div>
-    React is working
-  </div>
+  <Game />
 );
 
 document.addEventListener('DOMContentLoaded', () => {
