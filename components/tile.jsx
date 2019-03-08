@@ -4,6 +4,22 @@ class Tile extends React.Component {
   constructor(props){
     super(props);
 
+    function getStatus(){
+      if(props.tile.bombed){
+        return "bombed";
+      } else if(props.tile.flagged){
+        return "flagged";
+      } else if(props.tile.explored){
+        return "explored";
+      } else {
+        return "";
+      }
+    }
+
+    this.state = {
+      status: getStatus()
+    };
+
     this.getSymbol = this.getSymbol.bind(this);
   }
 
@@ -22,10 +38,11 @@ class Tile extends React.Component {
 
   render() {
     console.log(this.props.tile);
+    console.log(this.state);
     return (
-      <span>
+      <div className={`tile ${this.state.status}`}>
         {this.getSymbol()}
-      </span>
+      </div>
     );
   }
 }
