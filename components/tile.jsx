@@ -8,11 +8,13 @@ class Tile extends React.Component {
   }
 
   getSymbol(){
-    return (
-      <span>
-        &#128681;
-      </span>
-    );
+    if(this.props.tile.flagged){
+      return <span>&#128681;</span>;
+    } else if(this.props.tile.bombed){
+      return <span>&#128163;</span>;
+    } else {
+      return 'T';
+    }
   }
 
   render() {
