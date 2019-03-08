@@ -17,8 +17,8 @@ class Game extends React.Component{
 
   render() {
     return (
-      <
-    )
+      <Board updateGame={this.updateGame} board={this.state.board} />
+    );
   }
 }
 
