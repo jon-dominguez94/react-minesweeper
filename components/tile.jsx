@@ -1,4 +1,5 @@
 import React from 'react';
+import '../css/tile.scss';
 
 class Tile extends React.Component {
   constructor(props){
