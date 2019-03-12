@@ -24,13 +24,16 @@ class Tile extends React.Component {
   }
 
   getSymbol(){
-    if(this.props.tile.flagged){
+
+    if (this.props.tile.explored) {
+      if (this.props.tile.bombed) {
+        return <span>&#128163;</span>;
+      } else {
+        const count = this.props.tile.adjacentBombCount();
+        return count > 0 ? count : " "
+      }
+    } else if(this.props.tile.flagged){
       return <span>&#128681;</span>;
-    } else if(this.props.tile.bombed){
-      return <span>&#128163;</span>;
-    } else if(this.props.tile.explored){
-      const count = this.props.tile.adjacentBombCount();
-      return count > 0 ? count : " "
     } else {
       return " ";
     }
