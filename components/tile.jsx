@@ -26,7 +26,11 @@ class Tile extends React.Component {
 
   handleClick(){
     return e => {
-      console.log(e.altKey);
+      if(e.altKey){
+        this.props.tile.toggleFlag();
+      } else {
+        this.props.tile.explore();
+      }
     };
   }
 
