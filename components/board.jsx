@@ -6,7 +6,7 @@ class Board extends React.Component {
 
     const board = this.props.board.grid.map((row, i) => {
       return (
-        <div key={i}>
+        <div className="flex" key={i}>
           {
             row.map((tile, j) => {
               return <Tile key={[i,j]} tile={tile} updateGame={this.props.updateGame} />
