@@ -31,6 +31,7 @@ class Tile extends React.Component {
       } else {
         this.props.tile.explore();
       }
+      console.log(this.props.pos);
     };
   }
 

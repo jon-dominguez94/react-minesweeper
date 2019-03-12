@@ -9,7 +9,7 @@ class Board extends React.Component {
         <div className="flex" key={i}>
           {
             row.map((tile, j) => {
-              return <Tile key={[i,j]} tile={tile} updateGame={this.props.updateGame} />
+              return <Tile key={[i,j]} pos={[i,j]} tile={tile} updateGame={this.props.updateGame} />
             })
           }
         </div>
