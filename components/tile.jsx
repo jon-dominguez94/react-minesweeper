@@ -32,7 +32,7 @@ class Tile extends React.Component {
       const count = this.props.tile.adjacentBombCount();
       return count > 0 ? count : " "
     } else {
-      return "_";
+      return " ";
     }
   }
 
