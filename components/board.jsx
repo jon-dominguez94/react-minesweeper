@@ -18,7 +18,7 @@ class Board extends React.Component {
     // console.log(this);
 
     return(
-      <div>
+      <div className="flex board">
         {board}
       </div>
     );
