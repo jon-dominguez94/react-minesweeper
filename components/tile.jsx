@@ -1,5 +1,4 @@
 import React from 'react';
-import '../css/blah.css';
 
 class Tile extends React.Component {
   constructor(props){
