@@ -21,6 +21,11 @@ class Tile extends React.Component {
     };
 
     this.getSymbol = this.getSymbol.bind(this);
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick(){
+    
   }
 
   getSymbol(){
@@ -43,7 +48,7 @@ class Tile extends React.Component {
     // console.log(this.props.tile);
     // console.log(this.state);
     return (
-      <div className={`tile flex ${this.state.status}`}>
+      <div className={`tile flex ${this.state.status}`} onClick={this.handleClick}>
         {this.getSymbol()}
       </div>
     );
