@@ -31,8 +31,8 @@ class Tile extends React.Component {
       // } else {
       //   this.props.tile.explore();
       // }
-      // console.log(this.props.pos);
-      this.props.updateGame(this.props.tile, this.props.pos. e.altKey);
+      console.log(this.props.pos);
+      this.props.updateGame(this.props.tile, this.props.pos, e.altKey);
     };
   }
 
