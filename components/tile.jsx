@@ -37,8 +37,8 @@ class Tile extends React.Component {
   }
 
   render() {
-    console.log(this.props.tile);
-    console.log(this.state);
+    // console.log(this.props.tile);
+    // console.log(this.state);
     return (
       <div className={`tile flex ${this.state.status}`}>
         {this.getSymbol()}
