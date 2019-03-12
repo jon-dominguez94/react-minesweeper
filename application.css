@@ -4,3 +4,7 @@
   border: 0.5px solid black;
   border-style: outset;
 }
+
+.flex {
+  display: flex;
+}
